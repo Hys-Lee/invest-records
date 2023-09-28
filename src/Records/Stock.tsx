@@ -16,7 +16,7 @@ export default function Stock({ stock, onChecked }: StockProps): React.ReactElem
         name={stock.tic}
         checked={stock.selected}
         onClick={(e) => {
-          onChecked(stock.tic, false);
+          onChecked(stock.tic, false, false);
         }}
       />
       <label htmlFor={stock.tic}>{stock.tic}</label>
