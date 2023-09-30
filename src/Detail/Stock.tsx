@@ -9,7 +9,7 @@ type StockProps = {
 
 export default function Stock({ stock, onChecked }: StockProps): React.ReactElement {
   return (
-    <li className="bg-blue-300 w-full ">
+    <li className="bg-red-300 w-full ">
       <input
         type="checkbox"
         id={stock.tic}

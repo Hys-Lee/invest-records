@@ -11,3 +11,8 @@ body {
   margin: 0 auto;
   text-align: center;
 }
+#selection {
+  transition:
+    height 1s ease-out,
+    overflow 1s;
+}
