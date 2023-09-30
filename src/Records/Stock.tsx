@@ -15,6 +15,7 @@ export default function Stock({ stock, onChecked }: StockProps): React.ReactElem
         id={stock.tic}
         name={stock.tic}
         checked={stock.selected}
+        readOnly
         onClick={(e) => {
           onChecked(stock.tic, false, false);
         }}

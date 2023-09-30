@@ -5,7 +5,7 @@ export default function Record({ history }: any): React.ReactElement {
   return (
     <div className="record">
       <h1>{history.tic}</h1>
-      <h2>{history.date.toTimeString()}</h2>
+      <h2>{history.date.toString()}</h2>
       <h2>{history.purchasingExchangeRate}</h2>
       <h2>{history.purchaseAmount}</h2>
       <h3>{history.quantity}</h3>

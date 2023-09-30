@@ -24,6 +24,7 @@ export default function Selection({ stocks, onStocks }: SelectionProps): React.R
               type="checkbox"
               id="all"
               name="all"
+              readOnly
               onClick={() => {
                 onStocks(undefined, true, allChecked);
               }}
