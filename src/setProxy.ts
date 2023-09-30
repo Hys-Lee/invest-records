@@ -11,7 +11,7 @@ app.use(
   }),
 );
 
-app.listen(3000);
+app.listen(5173);
 
 // proxy and keep the same base path "/api"
 // http://127.0.0.1:3000/api/foo/bar -> http://www.example.org/api/foo/bar
