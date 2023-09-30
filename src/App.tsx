@@ -1,10 +1,9 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import Stock from './components/Stock';
 import Exchange from './components/Exchange';
 import { Link } from 'react-router-dom';
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <>
