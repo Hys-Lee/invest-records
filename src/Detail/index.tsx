@@ -46,7 +46,7 @@ let stocks: StockType[] = [
   },
 ];
 
-export default function Records() {
+export default function Detail() {
   const [mystocks, useMystocks] = useState<StockType[]>(stocks);
   let allHistories: object[] = [];
   mystocks.map((s) => {

@@ -9,6 +9,7 @@ type SelectionProps = {
 
 export default function Selection({ stocks, onStocks }: SelectionProps): React.ReactElement {
   //   console.log(stocks); // 이거 왜 2번씩 불리는지 이해가 안감. -> strict mode 때문인 듯?
+  const [showing, useShowing] = useState<boolean>(false);
   const allChecked = stocks.filter((s) => s.selected === false).length === 0;
   const selected = stocks.filter((s) => s.selected === true);
   const representation = selected.length ? selected[0].tic : 'select';
@@ -16,10 +17,31 @@ export default function Selection({ stocks, onStocks }: SelectionProps): React.R
   //# all checkbox는 전체 stock이 선택되지 않으면 자동으로 풀림.
   return (
     <>
-      <div className="selectBox">
-        <h1>{representation}</h1>
-        <ul className="selectBox-content-container">
-          <li className="selectBox-content-element">
+      <div className="flex flex-col items-center">
+        <button
+          className='after:content-["▼"] after:relative after:left-1'
+          onClick={() => {
+            useShowing(!showing);
+          }}
+        >
+          {representation}
+        </button>
+
+        <ul
+          className="m-0 absolute top-6 bg-blue-200 w-72"
+          style={
+            !showing
+              ? { display: 'none' }
+              : {
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  height: '100px',
+                }
+          }
+        >
+          <li className=" bg-blue-300 w-full">
             <input
               type="checkbox"
               id="all"
@@ -36,7 +58,6 @@ export default function Selection({ stocks, onStocks }: SelectionProps): React.R
             <Stock key={stock.tic} stock={stock} onChecked={onStocks} />
           ))}
         </ul>
-        <span className="spreadIcon">V</span>
       </div>
     </>
   );

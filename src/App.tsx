@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -14,8 +15,15 @@ function App() {
               <div> Logo or Link .. </div>
             </div>
           </div>
-          <div className="bg-red-200 py-[60px] rounded-xl w-[375px]">
-            <div className="bg-neutral-300 h-full">Stock Contents</div>
+          <div className="bg-red-200 py-[60px] rounded-xl w-[375px] flex flex-col">
+            <div className="bg-neutral-300 h-full">
+              <h1>Stock Contents</h1>
+              <div className="flex flex-col items-center">
+                <Link to={'/detail/'}>
+                  <div className="h-10 w-60 bg-gray-50">content</div>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>
