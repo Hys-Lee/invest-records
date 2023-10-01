@@ -1,0 +1,442 @@
+{
+  "user": [
+    { "name": "Sanghyeon", "id": 1, "email": "sanghyeon@naver.com" },
+    { "name": "Yunsoo", "id": 2, "email": "yunsoo@naver.com" },
+    { "name": "Namu", "id": 3, "email": "namu@naver.com" }
+  ],
+
+  "stockList": [
+    {
+      "userId": 1,
+      "stockName": "apple",
+      "ticker": "AAPL",
+      "date": "2022-12-30 12:23:55 UTC",
+      "exchangeRate": 1365.5,
+      "price": 159.8,
+      "quantity": 1,
+      "buyAndSell": "b"
+    },
+    {
+      "userId": 1,
+      "stockName": "s&p",
+      "ticker": "VTI",
+      "date": "2021-11-10 15:40:05 UTC",
+      "exchangeRate": 1177.71,
+      "price": 239.97,
+      "quantity": 2,
+      "buyAndSell": "b"
+    },
+    {
+      "userId": 1,
+      "stockName": "s&p",
+      "ticker": "VTI",
+      "date": "2022-12-30 16:28:10 UTC",
+      "exchangeRate": 1260.05,
+      "price": 191.19,
+      "quantity": 1,
+      "buyAndSell": "b"
+    },
+    {
+      "userId": 1,
+      "stockName": "s&p",
+      "ticker": "VTI",
+      "date": "2022-11-09 20:03:49 UTC",
+      "exchangeRate": 1174.25,
+      "price": 187.53,
+      "quantity": 4,
+      "buyAndSell": "b"
+    },
+    {
+      "userId": 1,
+      "stockName": "gold",
+      "ticker": "iau",
+      "date": "2022-12-30 12:25:34 UTC",
+      "exchangeRate": 1260.05,
+      "price": 34.59,
+      "quantity": 2,
+      "buyAndSell": "b"
+    },
+    {
+      "userId": 1,
+      "stockName": "gold",
+      "ticker": "iau",
+      "date": "2022-11-09 19:48:25 UTC",
+      "exchangeRate": 1174.25,
+      "price": 33.24,
+      "quantity": 7,
+      "buyAndSell": "b"
+    },
+    {
+      "userId": 1,
+      "stockName": "gold",
+      "ticker": "iau",
+      "date": "2022-11-07 21:52:48 UTC",
+      "exchangeRate": 1174.25,
+      "price": 33.01,
+      "quantity": 3,
+      "buyAndSell": "b"
+    },
+    {
+      "userId": 1,
+      "stockName": "commodity",
+      "ticker": "gsg",
+      "date": "2022-12-30 21:52:48 UTC",
+      "exchangeRate": 1174.25,
+      "price": 21.23,
+      "quantity": 3,
+      "buyAndSell": "b"
+    },
+    {
+      "userId": 1,
+      "stockName": "commodity",
+      "ticker": "gsg",
+      "date": "2022-12-15 16:42:53 UTC",
+      "exchangeRate": 1187.59,
+      "price": 20.74,
+      "quantity": 9,
+      "buyAndSell": "b"
+    },
+    {
+      "userId": 1,
+      "stockName": "commodity",
+      "ticker": "gsg",
+      "date": "2022-11-07 21:50:16 UTC",
+      "exchangeRate": 1174.25,
+      "price": 22.83,
+      "quantity": 4,
+      "buyAndSell": "b"
+    },
+
+    {
+      "userId": 2,
+      "stockName": "apple",
+      "ticker": "AAPL",
+      "date": "2023-04-19 10:38:59 UTC",
+      "exchangeRate": 1329.71,
+      "price": 167.63,
+      "quantity": 3,
+      "buyAndSell": "b"
+    },
+    {
+      "userId": 2,
+      "stockName": "apple",
+      "ticker": "AAPL",
+      "date": "2023-05-24 17:23:47 UTC",
+      "exchangeRate": 1318.43,
+      "price": 171.84,
+      "quantity": 4,
+      "buyAndSell": "b"
+    },
+    {
+      "userId": 2,
+      "stockName": "apple",
+      "ticker": "AAPL",
+      "date": "2023-06-13 14:15:51 UTC",
+      "exchangeRate": 1267.7,
+      "price": 183.31,
+      "quantity": 9,
+      "buyAndSell": "b"
+    },
+    {
+      "userId": 2,
+      "stockName": "apple",
+      "ticker": "AAPL",
+      "date": "2023-07-10 23:11:35 UTC",
+      "exchangeRate": 1299.4,
+      "price": 188.61,
+      "quantity": 6,
+      "buyAndSell": "b"
+    },
+    {
+      "userId": 2,
+      "stockName": "apple",
+      "ticker": "AAPL",
+      "date": "2023-08-01 12:38:47 UTC",
+      "exchangeRate": 1289.0,
+      "price": 195.61,
+      "quantity": 20,
+      "buyAndSell": "s"
+    },
+
+    {
+      "userId": 3,
+      "stockName": "tesla",
+      "ticker": "tsla",
+      "date": "2020-01-03 12:23:55 UTC",
+      "exchangeRate": 1164.95,
+      "price": 29.53,
+      "quantity": 3,
+      "buyAndSell": "b"
+    },
+    {
+      "userId": 3,
+      "stockName": "tesla",
+      "ticker": "tsla",
+      "date": "2020-07-13 14:16:53 UTC",
+      "exchangeRate": 1203.37,
+      "price": 94.47,
+      "quantity": 4,
+      "buyAndSell": "b"
+    },
+    {
+      "userId": 3,
+      "stockName": "tesla",
+      "ticker": "tsla",
+      "date": "2020-08-21 21:35:16 UTC",
+      "exchangeRate": 1191.72,
+      "price": 136.67,
+      "quantity": 8,
+      "buyAndSell": "b"
+    },
+    {
+      "userId": 3,
+      "stockName": "tesla",
+      "ticker": "tsla",
+      "date": "2020-09-18 22:11:36 UTC",
+      "exchangeRate": 1164.81,
+      "price": 147.38,
+      "quantity": 4,
+      "buyAndSell": "b"
+    },
+    {
+      "userId": 3,
+      "stockName": "tesla",
+      "ticker": "tsla",
+      "date": "2020-10-23 19:58:32 UTC",
+      "exchangeRate": 1127.95,
+      "price": 140.21,
+      "quantity": 3,
+      "buyAndSell": "b"
+    },
+    {
+      "userId": 3,
+      "stockName": "tesla",
+      "ticker": "tsla",
+      "date": "2020-11-22 11:18:43 UTC",
+      "exchangeRate": 1114.95,
+      "price": 163.2,
+      "quantity": 4,
+      "buyAndSell": "b"
+    },
+    {
+      "userId": 3,
+      "stockName": "tesla",
+      "ticker": "tsla",
+      "date": "2020-11-27 22:10:34 UTC",
+      "exchangeRate": 1104.43,
+      "price": 195.25,
+      "quantity": 5,
+      "buyAndSell": "b"
+    },
+    {
+      "userId": 3,
+      "stockName": "tesla",
+      "ticker": "tsla",
+      "date": "2020-12-18 22:10:34 UTC",
+      "exchangeRate": 1099.39,
+      "price": 231.67,
+      "quantity": 5,
+      "buyAndSell": "b"
+    },
+    {
+      "userId": 3,
+      "stockName": "tesla",
+      "ticker": "tsla",
+      "date": "2020-12-23 12:30:28 UTC",
+      "exchangeRate": 1106.65,
+      "price": 220.59,
+      "quantity": 8,
+      "buyAndSell": "b"
+    },
+    {
+      "userId": 3,
+      "stockName": "tesla",
+      "ticker": "tsla",
+      "date": "2020-12-31 09:18:31 UTC",
+      "exchangeRate": 1084.47,
+      "price": 235.22,
+      "quantity": 9,
+      "buyAndSell": "b"
+    },
+    {
+      "userId": 3,
+      "stockName": "tesla",
+      "ticker": "tsla",
+      "date": "2021-01-15 20:14:59 UTC",
+      "exchangeRate": 1103.27,
+      "price": 275.39,
+      "quantity": 40,
+      "buyAndSell": "s"
+    },
+    {
+      "userId": 3,
+      "stockName": "tesla",
+      "ticker": "tsla",
+      "date": "2021-02-26 17:38:47 UTC",
+      "exchangeRate": 1123.89,
+      "price": 225.27,
+      "quantity": 10,
+      "buyAndSell": "s"
+    },
+    {
+      "userId": 3,
+      "stockName": "tesla",
+      "ticker": "tsla",
+      "date": "2021-03-12 10:23:41 UTC",
+      "exchangeRate": 1136.0,
+      "price": 231.24,
+      "quantity": 16,
+      "buyAndSell": "b"
+    },
+    {
+      "userId": 3,
+      "stockName": "tesla",
+      "ticker": "tsla",
+      "date": "2021-03-26 18:58:43 UTC",
+      "exchangeRate": 1128.52,
+      "price": 206.24,
+      "quantity": 18,
+      "buyAndSell": "s"
+    },
+    {
+      "userId": 3,
+      "stockName": "tesla",
+      "ticker": "tsla",
+      "date": "2021-04-09 15:38:28 UTC",
+      "exchangeRate": 1120.98,
+      "price": 225.67,
+      "quantity": 12,
+      "buyAndSell": "b"
+    },
+    {
+      "userId": 3,
+      "stockName": "tesla",
+      "ticker": "tsla",
+      "date": "2021-05-14 09:56:19 UTC",
+      "exchangeRate": 1125.79,
+      "price": 196.58,
+      "quantity": 12,
+      "buyAndSell": "s"
+    },
+    {
+      "userId": 3,
+      "stockName": "tesla",
+      "ticker": "tsla",
+      "date": "2021-10-15 23:15:31 UTC",
+      "exchangeRate": 1182.07,
+      "price": 281.01,
+      "quantity": 12,
+      "buyAndSell": "b"
+    },
+    {
+      "userId": 3,
+      "stockName": "tesla",
+      "ticker": "tsla",
+      "date": "2021-10-22 20:18:37 UTC",
+      "exchangeRate": 1177.48,
+      "price": 303.23,
+      "quantity": 2,
+      "buyAndSell": "b"
+    },
+    {
+      "userId": 3,
+      "stockName": "tesla",
+      "ticker": "tsla",
+      "date": "2021-10-29 14:23:57 UTC",
+      "exchangeRate": 1147.47,
+      "price": 371.33,
+      "quantity": 10,
+      "buyAndSell": "b"
+    },
+    {
+      "userId": 3,
+      "stockName": "tesla",
+      "ticker": "tsla",
+      "date": "2021-11-19 14:23:57 UTC",
+      "exchangeRate": 1187.1,
+      "price": 360.64,
+      "quantity": 5,
+      "buyAndSell": "s"
+    },
+    {
+      "userId": 3,
+      "stockName": "tesla",
+      "ticker": "tsla",
+      "date": "2021-12-17 23:57:26 UTC",
+      "exchangeRate": 1187.7,
+      "price": 310.86,
+      "quantity": 10,
+      "buyAndSell": "s"
+    },
+    {
+      "userId": 3,
+      "stockName": "tesla",
+      "ticker": "tsla",
+      "date": "2021-12-23 10:49:17 UTC",
+      "exchangeRate": 1185.55,
+      "price": 355.67,
+      "quantity": 15,
+      "buyAndSell": "b"
+    },
+    {
+      "userId": 3,
+      "stockName": "tesla",
+      "ticker": "tsla",
+      "date": "2022-01-28 10:49:28 UTC",
+      "exchangeRate": 1209.56,
+      "price": 282.12,
+      "quantity": 5,
+      "buyAndSell": "s"
+    },
+    {
+      "userId": 3,
+      "stockName": "tesla",
+      "ticker": "tsla",
+      "date": "2022-02-25 10:49:19 UTC",
+      "exchangeRate": 1197.57,
+      "price": 269.96,
+      "quantity": 10,
+      "buyAndSell": "s"
+    },
+    {
+      "userId": 3,
+      "stockName": "tesla",
+      "ticker": "tsla",
+      "date": "2022-03-18 16:47:56 UTC",
+      "exchangeRate": 1211.15,
+      "price": 301.8,
+      "quantity": 12,
+      "buyAndSell": "b"
+    },
+    {
+      "userId": 3,
+      "stockName": "tesla",
+      "ticker": "tsla",
+      "date": "2022-04-14 21:23:54 UTC",
+      "exchangeRate": 1230.15,
+      "price": 328.33,
+      "quantity": 10,
+      "buyAndSell": "s"
+    },
+    {
+      "userId": 3,
+      "stockName": "tesla",
+      "ticker": "tsla",
+      "date": "2022-05-06 13:11:38 UTC",
+      "exchangeRate": 1269.99,
+      "price": 288.85,
+      "quantity": 5,
+      "buyAndSell": "s"
+    },
+    {
+      "userId": 3,
+      "stockName": "tesla",
+      "ticker": "tsla",
+      "date": "2022-05-20 01:46:13 UTC",
+      "exchangeRate": 1273.59,
+      "price": 221.3,
+      "quantity": 7,
+      "buyAndSell": "s"
+    }
+  ]
+}
