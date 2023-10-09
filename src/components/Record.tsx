@@ -1,4 +1,4 @@
-import { RecordType } from '.';
+import { RecordType } from './DetailTest';
 
 export default function Record({ history }: any): React.ReactElement {
   // 더 디테일한 정보는 클릭으로 봐야할 것 같은데.

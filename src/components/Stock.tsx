@@ -1,5 +1,5 @@
 import { MouseEventHandler } from 'react';
-import { StockType } from '.';
+import { StockType } from './DetailTest';
 import { useState } from 'react';
 
 type StockProps = {

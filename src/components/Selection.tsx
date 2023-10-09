@@ -1,4 +1,4 @@
-import { StockType } from './index';
+import { StockType } from './DetailTest';
 import { useState } from 'react';
 
 import Stock from './Stock';
