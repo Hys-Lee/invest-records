@@ -49,7 +49,7 @@
     {
       "userId": 1,
       "stockName": "gold",
-      "ticker": "iau",
+      "ticker": "IAU",
       "date": "2022-12-30 12:25:34 UTC",
       "exchangeRate": 1260.05,
       "price": 34.59,
@@ -59,7 +59,7 @@
     {
       "userId": 1,
       "stockName": "gold",
-      "ticker": "iau",
+      "ticker": "IAU",
       "date": "2022-11-09 19:48:25 UTC",
       "exchangeRate": 1174.25,
       "price": 33.24,
@@ -69,7 +69,7 @@
     {
       "userId": 1,
       "stockName": "gold",
-      "ticker": "iau",
+      "ticker": "IAU",
       "date": "2022-11-07 21:52:48 UTC",
       "exchangeRate": 1174.25,
       "price": 33.01,
@@ -79,7 +79,7 @@
     {
       "userId": 1,
       "stockName": "commodity",
-      "ticker": "gsg",
+      "ticker": "GSG",
       "date": "2022-12-30 21:52:48 UTC",
       "exchangeRate": 1174.25,
       "price": 21.23,
@@ -89,7 +89,7 @@
     {
       "userId": 1,
       "stockName": "commodity",
-      "ticker": "gsg",
+      "ticker": "GSG",
       "date": "2022-12-15 16:42:53 UTC",
       "exchangeRate": 1187.59,
       "price": 20.74,
@@ -99,7 +99,7 @@
     {
       "userId": 1,
       "stockName": "commodity",
-      "ticker": "gsg",
+      "ticker": "GSG",
       "date": "2022-11-07 21:50:16 UTC",
       "exchangeRate": 1174.25,
       "price": 22.83,
@@ -161,7 +161,7 @@
     {
       "userId": 3,
       "stockName": "tesla",
-      "ticker": "tsla",
+      "ticker": "TSLA",
       "date": "2020-01-03 12:23:55 UTC",
       "exchangeRate": 1164.95,
       "price": 29.53,
@@ -171,7 +171,7 @@
     {
       "userId": 3,
       "stockName": "tesla",
-      "ticker": "tsla",
+      "ticker": "TSLA",
       "date": "2020-07-13 14:16:53 UTC",
       "exchangeRate": 1203.37,
       "price": 94.47,
@@ -181,7 +181,7 @@
     {
       "userId": 3,
       "stockName": "tesla",
-      "ticker": "tsla",
+      "ticker": "TSLA",
       "date": "2020-08-21 21:35:16 UTC",
       "exchangeRate": 1191.72,
       "price": 136.67,
@@ -191,7 +191,7 @@
     {
       "userId": 3,
       "stockName": "tesla",
-      "ticker": "tsla",
+      "ticker": "TSLA",
       "date": "2020-09-18 22:11:36 UTC",
       "exchangeRate": 1164.81,
       "price": 147.38,
@@ -201,7 +201,7 @@
     {
       "userId": 3,
       "stockName": "tesla",
-      "ticker": "tsla",
+      "ticker": "TSLA",
       "date": "2020-10-23 19:58:32 UTC",
       "exchangeRate": 1127.95,
       "price": 140.21,
@@ -211,7 +211,7 @@
     {
       "userId": 3,
       "stockName": "tesla",
-      "ticker": "tsla",
+      "ticker": "TSLA",
       "date": "2020-11-22 11:18:43 UTC",
       "exchangeRate": 1114.95,
       "price": 163.2,
@@ -221,7 +221,7 @@
     {
       "userId": 3,
       "stockName": "tesla",
-      "ticker": "tsla",
+      "ticker": "TSLA",
       "date": "2020-11-27 22:10:34 UTC",
       "exchangeRate": 1104.43,
       "price": 195.25,
@@ -231,7 +231,7 @@
     {
       "userId": 3,
       "stockName": "tesla",
-      "ticker": "tsla",
+      "ticker": "TSLA",
       "date": "2020-12-18 22:10:34 UTC",
       "exchangeRate": 1099.39,
       "price": 231.67,
@@ -241,7 +241,7 @@
     {
       "userId": 3,
       "stockName": "tesla",
-      "ticker": "tsla",
+      "ticker": "TSLA",
       "date": "2020-12-23 12:30:28 UTC",
       "exchangeRate": 1106.65,
       "price": 220.59,
@@ -251,7 +251,7 @@
     {
       "userId": 3,
       "stockName": "tesla",
-      "ticker": "tsla",
+      "ticker": "TSLA",
       "date": "2020-12-31 09:18:31 UTC",
       "exchangeRate": 1084.47,
       "price": 235.22,
@@ -261,7 +261,7 @@
     {
       "userId": 3,
       "stockName": "tesla",
-      "ticker": "tsla",
+      "ticker": "TSLA",
       "date": "2021-01-15 20:14:59 UTC",
       "exchangeRate": 1103.27,
       "price": 275.39,
@@ -271,7 +271,7 @@
     {
       "userId": 3,
       "stockName": "tesla",
-      "ticker": "tsla",
+      "ticker": "TSLA",
       "date": "2021-02-26 17:38:47 UTC",
       "exchangeRate": 1123.89,
       "price": 225.27,
@@ -281,7 +281,7 @@
     {
       "userId": 3,
       "stockName": "tesla",
-      "ticker": "tsla",
+      "ticker": "TSLA",
       "date": "2021-03-12 10:23:41 UTC",
       "exchangeRate": 1136.0,
       "price": 231.24,
@@ -291,7 +291,7 @@
     {
       "userId": 3,
       "stockName": "tesla",
-      "ticker": "tsla",
+      "ticker": "TSLA",
       "date": "2021-03-26 18:58:43 UTC",
       "exchangeRate": 1128.52,
       "price": 206.24,
@@ -301,7 +301,7 @@
     {
       "userId": 3,
       "stockName": "tesla",
-      "ticker": "tsla",
+      "ticker": "TSLA",
       "date": "2021-04-09 15:38:28 UTC",
       "exchangeRate": 1120.98,
       "price": 225.67,
@@ -311,7 +311,7 @@
     {
       "userId": 3,
       "stockName": "tesla",
-      "ticker": "tsla",
+      "ticker": "TSLA",
       "date": "2021-05-14 09:56:19 UTC",
       "exchangeRate": 1125.79,
       "price": 196.58,
@@ -321,7 +321,7 @@
     {
       "userId": 3,
       "stockName": "tesla",
-      "ticker": "tsla",
+      "ticker": "TSLA",
       "date": "2021-10-15 23:15:31 UTC",
       "exchangeRate": 1182.07,
       "price": 281.01,
@@ -331,7 +331,7 @@
     {
       "userId": 3,
       "stockName": "tesla",
-      "ticker": "tsla",
+      "ticker": "TSLA",
       "date": "2021-10-22 20:18:37 UTC",
       "exchangeRate": 1177.48,
       "price": 303.23,
@@ -341,7 +341,7 @@
     {
       "userId": 3,
       "stockName": "tesla",
-      "ticker": "tsla",
+      "ticker": "TSLA",
       "date": "2021-10-29 14:23:57 UTC",
       "exchangeRate": 1147.47,
       "price": 371.33,
@@ -351,7 +351,7 @@
     {
       "userId": 3,
       "stockName": "tesla",
-      "ticker": "tsla",
+      "ticker": "TSLA",
       "date": "2021-11-19 14:23:57 UTC",
       "exchangeRate": 1187.1,
       "price": 360.64,
@@ -361,7 +361,7 @@
     {
       "userId": 3,
       "stockName": "tesla",
-      "ticker": "tsla",
+      "ticker": "TSLA",
       "date": "2021-12-17 23:57:26 UTC",
       "exchangeRate": 1187.7,
       "price": 310.86,
@@ -371,7 +371,7 @@
     {
       "userId": 3,
       "stockName": "tesla",
-      "ticker": "tsla",
+      "ticker": "TSLA",
       "date": "2021-12-23 10:49:17 UTC",
       "exchangeRate": 1185.55,
       "price": 355.67,
@@ -381,7 +381,7 @@
     {
       "userId": 3,
       "stockName": "tesla",
-      "ticker": "tsla",
+      "ticker": "TSLA",
       "date": "2022-01-28 10:49:28 UTC",
       "exchangeRate": 1209.56,
       "price": 282.12,
@@ -391,7 +391,7 @@
     {
       "userId": 3,
       "stockName": "tesla",
-      "ticker": "tsla",
+      "ticker": "TSLA",
       "date": "2022-02-25 10:49:19 UTC",
       "exchangeRate": 1197.57,
       "price": 269.96,
@@ -401,7 +401,7 @@
     {
       "userId": 3,
       "stockName": "tesla",
-      "ticker": "tsla",
+      "ticker": "TSLA",
       "date": "2022-03-18 16:47:56 UTC",
       "exchangeRate": 1211.15,
       "price": 301.8,
@@ -411,7 +411,7 @@
     {
       "userId": 3,
       "stockName": "tesla",
-      "ticker": "tsla",
+      "ticker": "TSLA",
       "date": "2022-04-14 21:23:54 UTC",
       "exchangeRate": 1230.15,
       "price": 328.33,
@@ -421,7 +421,7 @@
     {
       "userId": 3,
       "stockName": "tesla",
-      "ticker": "tsla",
+      "ticker": "TSLA",
       "date": "2022-05-06 13:11:38 UTC",
       "exchangeRate": 1269.99,
       "price": 288.85,
@@ -431,7 +431,7 @@
     {
       "userId": 3,
       "stockName": "tesla",
-      "ticker": "tsla",
+      "ticker": "TSLA",
       "date": "2022-05-20 01:46:13 UTC",
       "exchangeRate": 1273.59,
       "price": 221.3,
