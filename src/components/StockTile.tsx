@@ -7,6 +7,7 @@ export default function StockTile({
   onAndOff,
   profitAndLossPercent,
 }): React.ReactElement {
+  console.log('all: ', title, currentSaving, recentDate, onAndOff, profitAndLossPercent);
   return (
     <div
       rate={profitAndLossPercent}

@@ -1,8 +1,8 @@
 import userInfo from '../user.json';
-import StockTile from './STockTile';
+import StockTile from './StockTile.tsx';
 export default function MainSummary() {
   const user1 = userInfo.stockList.filter((info) => info.userId === 1);
-
+  console.log(user1);
   return (
     <div className="h-99 bg-slate-100">
       <StockTile stockInfo={user1} />

@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App.tsx';
-import Detail from './Detail/index.tsx';
+import DetailTest from './components/DetailTest.tsx';
+import Detail from './pages/Detail.tsx';
 import './index.css';
 import './font.css';
 

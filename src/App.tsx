@@ -1,10 +1,10 @@
 // import { useState } from 'react';
-import Stock from './components/Stock';
-import Exchange from './components/Exchange';
+import Stock from './api/Stock';
+import Exchange from './api/Exchange';
+import MainSummary from './components/MainSummary.tsx';
 import { Link } from 'react-router-dom';
 
 function App() {
-
   return (
     <>
       <div id="main" className="bg-neutral-700">
@@ -21,12 +21,12 @@ function App() {
               </h3>
             </div>
           </div>
-          <div className="flex flex-col py-[60px] rounded-3xl w-[375px] bg-white text-left">
+          <div className="flex flex-col items-center py-[60px] rounded-3xl  w-[375px] bg-white text-left">
             <p className="pl-4 font-bold text-[28px]">Stock Contents</p>
-            <div className="py-4 h-full bg-[#F2F2F2]">
-              <div className="pl-4">
+            <div className=" rounded-md py-4 w-full px-1 h-full bg-[#F2F2F2]">
+              <div className=" flex flex-col items-center px-0">
                 <Link to={'/detail/'}>
-                  <div className="h-10 w-60 bg-gray-50">content</div>
+                  <MainSummary />
                 </Link>
                 <p className="pb-2 text-neutral-500">Realtime Stock Candles</p>
                 <Stock />

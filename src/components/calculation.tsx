@@ -1,10 +1,9 @@
 import usersInfo from '../user.json';
 
 export const stockCalc = (userId) => {
-  const aUserTotalInfo: any[] = (userId) =>
-    usersInfo.stockList.filter((info) => info.userId === userId);
+  const aUserTotalInfo: any[] = usersInfo.stockList.filter((info) => info.userId === userId);
 
-  const aUserStocks: object = (userId) => {
+  const aUserStocks = (function () {
     let tmpObject = {};
 
     aUserTotalInfo.map((info) => {
@@ -19,15 +18,21 @@ export const stockCalc = (userId) => {
       }
     });
     return tmpObject;
-  };
+  })();
+  // (userId) => {
+
+  // };
 
   const havingMoneyWon = (tickers: any[]) => {
     return tickers
       .map((t) => {
-        if (aUserStocks.t) {
-          const buyOrSell: number = aUserStocks.t.buyAndSell == 'b' ? 1 : -1;
+        console.log('T', aUserStocks[t]);
+        if (Object.keys(aUserStocks).includes(t)) {
+          const buyOrSell: number = aUserStocks[t].buyAndSell == 'b' ? 1 : -1;
+          const totalaUserStocks[t].map(record=>record.price).reduce((acc,cur)=>acc+cur);
+          
           return (
-            aUserStocks.t.price * aUserStocks.t.exchangeRate * aUserStocks.t.quantity * buyOrSell
+            aUserStocks[t].price * aUserStocks[t].exchangeRate * aUserStocks[t].quantity * buyOrSell
           );
         } else {
           return 0;
@@ -35,7 +40,7 @@ export const stockCalc = (userId) => {
       })
       .reduce((acc, cur) => acc + cur);
   };
-
+  console.log('inner-total', havingMoneyWon(['AAPL']));
   const expectedEarningWon = (tickers) => {
     // 실제로는 Recent 관련 data도 reduce로 합쳐야 함.
     let iMW = havingMoneyWon(tickers);

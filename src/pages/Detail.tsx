@@ -1,9 +1,10 @@
-import { stockCalc, tmpRecentStockDate } from '../compon0ents/calculation.tsx';
-import StockTile from '../components/STockTile.tsx';
+import { stockCalc, tmpRecentStockDate } from '../components/calculation.tsx';
+import StockTile from '../components/StockTile.tsx';
 
 export default function Detail() {
   const stockInfo = stockCalc(1);
-
+  console.log('Stockinfo:', stockInfo);
+  console.log('detail', stockInfo.currentWon(['VTI']));
   return (
     <>
       <div>ghgh</div>
@@ -13,7 +14,7 @@ export default function Detail() {
             return (
               <StockTile
                 title={ticker}
-                currentSaving={stockInfo.currentWon}
+                currentSaving={stockInfo.allTickers.currentWon}
                 recentDate={tmpRecentStockDate}
                 onAndOff={tmpRecentStockDate === new Date().toLocaleDateString()}
                 profitAndLossPercent={stockInfo.earningRateWon}
