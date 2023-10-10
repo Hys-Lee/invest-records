@@ -28,30 +28,52 @@ export const stockCalc = (userId) => {
       .map((t) => {
         console.log('T', aUserStocks[t]);
         if (Object.keys(aUserStocks).includes(t)) {
-          const buyOrSell: number = aUserStocks[t].buyAndSell == 'b' ? 1 : -1;
-          const totalaUserStocks[t].map(record=>record.price).reduce((acc,cur)=>acc+cur);
-          
-          return (
-            aUserStocks[t].price * aUserStocks[t].exchangeRate * aUserStocks[t].quantity * buyOrSell
-          );
+          const buyOrSell: number = aUserStocks[t];
+          const priceTotal = aUserStocks[t]
+            .map((record) => record.price * (record.buyAndSell == 'b' ? 1 : -1))
+            .reduce((acc, cur) => acc + cur);
+          const exRateTotal = aUserStocks[t]
+            .map((record) => record.exchangeRate)
+            .reduce((acc, cur) => acc + cur);
+          const quantityTotal = aUserStocks[t]
+            .map((record) => record.quantity)
+            .reduce((acc, cur) => acc + cur);
+          // print("엉엉:", buyor)
+          return priceTotal * exRateTotal * quantityTotal;
         } else {
           return 0;
         }
       })
       .reduce((acc, cur) => acc + cur);
   };
-  console.log('inner-total', havingMoneyWon(['AAPL']));
+
+  // 이 부분 실제 값으로 api에서 가져오기.
+  const expectedMoneyWon = (tickers) => {
+    const tmp = tmpRecentPrice * tmpRecentExRate;
+    return tickers
+      .map((t) => {
+        if (Object.keys(aUserStocks).includes(t)) {
+          const quantityTotal = aUserStocks[t]
+            .map((record) => record.quantity)
+            .reduce((acc, cur) => acc + cur);
+          return quantityTotal * tmp;
+        } else {
+          return 0;
+        }
+      })
+      .reduce((acc, cur) => acc + cur);
+  };
+
   const expectedEarningWon = (tickers) => {
-    // 실제로는 Recent 관련 data도 reduce로 합쳐야 함.
     let iMW = havingMoneyWon(tickers);
     if (iMW == 0) {
       /// 전부 팔아서 없는
       return 0;
     } else {
-      return tmpRecentPrice * tmpRecentExRate * 1 - havingMoneyWon(tickers);
+      return expectedMoneyWon(tickers) - havingMoneyWon(tickers);
     }
   };
-  const expectedMoneyWon = (tickers) => havingMoneyWon(tickers) + expectedEarningWon(tickers);
+
   const expectedEarningRateWon = (tickers) =>
     Math.round((expectedEarningWon(tickers) / havingMoneyWon(tickers)) * 100);
 
