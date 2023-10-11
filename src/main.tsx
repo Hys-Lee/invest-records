@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App.tsx';
-import DetailTest from './components/DetailTest.tsx';
 import Detail from './pages/Detail.tsx';
+import TradingDetail from './pages/TradingDetail.tsx';
 import './index.css';
 import './font.css';
 
@@ -15,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: '/detail/',
     element: <Detail />,
+  },
+  {
+    path: '/detail/:userId/:ticker',
+    element: <TradingDetail />,
   },
 ]);
 
