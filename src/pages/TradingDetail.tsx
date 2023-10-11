@@ -3,11 +3,11 @@ import user from '../user.json';
 import Stock from '../api/Stock';
 
 export default function TradingDetail() {
-  let { userId, ticker } = useParams();
+  let { userId, ticker } = useParams() as { userId: string; ticker: string };
 
-  const id = typeof userId === 'string' && !isNaN(userId) && parseInt(userId);
+  const id = parseInt(userId);
 
-  if (!id) {
+  if (isNaN(id)) {
     return <div>no data to show</div>;
   }
 
