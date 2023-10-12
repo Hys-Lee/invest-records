@@ -1,11 +1,21 @@
-import userInfo from '../user.json';
+import { stockCalc, tmpRecentStockDate } from './calculation.tsx';
 import StockTile from './StockTile.tsx';
 export default function MainSummary() {
-  const user1 = userInfo.stockList.filter((info) => info.userId === 1);
-  console.log(user1);
+  const userId = 1;
+  const mainInfo = stockCalc(userId);
+  console.log('info', mainInfo);
+  const tickers = mainInfo.allTickers;
+  const currentSaving = Math.round(mainInfo.currentWon(tickers));
+  const profitAndLossPercent = mainInfo.earningRateWon(tickers);
   return (
     <div className="h-99 bg-slate-100">
-      <StockTile stockInfo={user1} />
+      <StockTile
+        title="Total"
+        currentSaving={currentSaving}
+        recentDate={tmpRecentStockDate}
+        onAndOff={tmpRecentStockDate === new Date().toLocaleDateString()}
+        profitAndLossPercent={profitAndLossPercent}
+      />
     </div>
   );
 }
