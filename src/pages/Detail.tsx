@@ -11,9 +11,8 @@ export default function Detail() {
   }
   return (
     <>
-      <div>ghgh</div>
-      <div className="bg-slate-100 h-full">
-        <div className="flex flex-col  items-center h-72 gap-3">
+      <div className=" h-full">
+        <div className="flex flex-col  items-center h-full gap-3 overflow-scroll">
           {stockInfo.allTickers.map((ticker) => {
             return (
               <Link to={`/detail/${userId}/${ticker}`}>

@@ -7,12 +7,22 @@ export default function StockTile({
   onAndOff,
   profitAndLossPercent,
 }): React.ReactElement {
+  const tileRef = useRef(null);
+
+  useEffect(() => {
+    if (profitAndLossPercent > 0) {
+      tileRef.current.className += ' before:text-red-400 ';
+    } else {
+      tileRef.current.className += ' before:text-blue-400 ';
+    }
+  }, [tileRef]);
   console.log('all: ', title, currentSaving, recentDate, onAndOff, profitAndLossPercent);
   return (
     <div
+      ref={tileRef}
       rate={profitAndLossPercent}
       className="
-    before:content-[attr(rate)'%']  before:w-10 before:h-10 before:bg-zinc-200  before:absolute before:-translate-y-2 before:translate-x-24  before:rounded-full before:leading-10 before:font-bold  before:text-md
+    before:content-[attr(rate)'%']  before:w-10 before:h-10 before:bg-zinc-200  before:absolute before:-translate-y-2 before:translate-x-24  before:rounded-full before:leading-10 before:font-bold  before:text-md before:text-center
   bg-white w-48  rounded-2xl shadow-sm flex flex-col items-center"
     >
       <h2 className=" font-medium  text-slate-500 text-xl">{title}</h2>

@@ -17,12 +17,13 @@ export default function TradingDetail() {
   });
 
   return (
-    <div className="m-2">
+    <div className="m-2  ">
+      <h2 className=" text-center text-3xl font-bold">{ticker}</h2>
       <p className="pb-2 text-neutral-500">Trading History</p>
-      <div className="grid gap-4 justify-center text-left">
+      <div className="grid gap-4 justify-center text-left overflow-scroll h-60">
         {trading.map((x) => {
           return (
-            <div className="p-4 w-[280px] rounded-lg bg-neutral-200">
+            <div className="p-4 w-[280px] rounded-lg bg-neutral-200" key={x.ticker + x.date}>
               <div className="font-bold">Date of Trading</div>
               <div>{x.date}</div>
               <div className="font-bold">Type of Trading</div>
