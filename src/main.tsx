@@ -39,7 +39,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
               </h3>
             </div>
           </div>
-          <div className="flex flex-col items-center py-[60px] rounded-3xl  w-[375px] bg-white text-left">
+          <div className="flex flex-col items-center py-[40px] rounded-3xl  w-[375px] bg-white text-left">
             <p className="pl-4 font-bold text-[28px]">Stock Contents</p>
             <div className="rounded-md py-4 w-full px-1 h-full bg-[#F2F2F2] flex flex-col items-center justify-start  overflow-hidden">
               <RouterProvider router={router} />

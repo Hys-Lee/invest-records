@@ -17,7 +17,7 @@ export default function TradingDetail() {
   });
 
   return (
-    <div className="m-2  ">
+    <div className="m-2 w-72  ">
       <Link to={`/detail/`} className=" text-center">
         <span className="  text-2xl font-extrabold">&lt;</span>
       </Link>
