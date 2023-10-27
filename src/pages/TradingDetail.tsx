@@ -1,6 +1,7 @@
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import user from '../user.json';
 import Stock from '../api/Stock';
+import Button from '../components/Button';
 
 export default function TradingDetail() {
   let { userId, ticker } = useParams() as { userId: string; ticker: string };
@@ -17,7 +18,14 @@ export default function TradingDetail() {
   });
 
   return (
-    <div className="m-2  ">
+    <div className="m-2 w-72  ">
+      <div className="flex flex-row justify-between items-center">
+        <Link to={`/detail/`} className=" text-center">
+          <span className="  text-2xl font-extrabold">&lt;</span>
+        </Link>
+        <Button userId={id} content="Edit" w="sm" />
+      </div>
+
       <h2 className=" text-center text-3xl font-bold">{ticker}</h2>
       <p className="pb-2 text-neutral-500">Trading History</p>
       <div className="grid gap-4 justify-center text-left overflow-scroll h-60">
@@ -30,6 +38,8 @@ export default function TradingDetail() {
               <div>{x.buyAndSell === 'b' ? 'buy' : 'sell'}</div>
               <div className="font-bold">Exchange Rate of the Day</div>
               <div>{x.exchangeRate}</div>
+              <div className="font-bold">Trading Price</div>
+              <div>{x.price}</div>
               <div className="font-bold">Trading Amount</div>
               <div>{x.quantity}</div>
             </div>
