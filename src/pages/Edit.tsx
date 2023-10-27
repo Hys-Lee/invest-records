@@ -10,14 +10,7 @@ const initInputs = {
   quantity: 0,
   buyAndSell: '',
 };
-// "userId": 1,
-//       "stockName": "s&p",
-//       "ticker": "VTI",
-//       "date": "2022-11-09 20:03:49 UTC",
-//       "exchangeRate": 1174.25,
-//       "price": 187.53,
-//       "quantity": 4,
-//       "buyAndSell": "b"
+
 export default function TradingDetail(userId) {
   const [inputs, useInputs] = useState({ ...initInputs, userId: userId });
   console.log('inputs: ', inputs);

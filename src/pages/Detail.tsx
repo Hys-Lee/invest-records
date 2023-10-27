@@ -1,6 +1,7 @@
 import { stockCalc, tmpRecentStockDate } from '../components/calculation.tsx';
-import StockTile from '../components/StockTile.tsx';
 import { Link } from 'react-router-dom';
+import StockTile from '../components/StockTile.tsx';
+import Button from '../components/Button.tsx';
 
 export default function Detail() {
   const userId = 1;
@@ -12,7 +13,7 @@ export default function Detail() {
   }
   return (
     <>
-      <div className=" h-full  m-2 w-72">
+      <div className=" h-full  m-2 w-72 flex flex-col items-center">
         <Link to={`/`} className=" text-center">
           <span className="  text-2xl font-extrabold">&lt;</span>
         </Link>
@@ -31,6 +32,9 @@ export default function Detail() {
               </Link>
             );
           })}
+        </div>
+        <div>
+          <Button />
         </div>
 
         {/* <Exchange /> */}
