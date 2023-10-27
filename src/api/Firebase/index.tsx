@@ -5,11 +5,9 @@ import { db } from '../../firebase.tsx';
 const orderRef = collection(db, 'orders');
 
 async function insertOrder(data: object) {
-  console.log('DATA INsert!!!!!!!!!!2');
   await addDoc(orderRef, data)
     .then((orderRef) => console.log(`Document has been added successfully into Stock document`))
     .catch((error) => console.log(error));
-  console.log('DATA INsert!!!!!!!!!!3');
 }
 
 async function getOrder(filter: object) {

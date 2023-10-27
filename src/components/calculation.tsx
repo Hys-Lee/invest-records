@@ -1,7 +1,7 @@
-import usersInfo from '../user.json';
+import { getOrder } from '../api/Firebase';
 
-export const stockCalc = (userId) => {
-  const aUserTotalInfo: any[] = usersInfo.stockList.filter((info) => info.userId === userId);
+export const stockCalc = async (userId) => {
+  const aUserTotalInfo: any[] = await getOrder({ userId: userId });
 
   const aUserStocks = (function () {
     let tmpObject = {};
@@ -26,7 +26,6 @@ export const stockCalc = (userId) => {
   const havingMoneyWon = (tickers: any[]) => {
     return tickers
       .map((t) => {
-        console.log('T', aUserStocks[t]);
         if (Object.keys(aUserStocks).includes(t)) {
           const buyOrSell: number = aUserStocks[t];
           const priceTotal = aUserStocks[t]
