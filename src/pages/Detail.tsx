@@ -1,6 +1,7 @@
 import { stockCalc, tmpRecentStockDate } from '../components/calculation.tsx';
-import StockTile from '../components/StockTile.tsx';
 import { Link } from 'react-router-dom';
+import StockTile from '../components/StockTile.tsx';
+import Button from '../components/Button.tsx';
 
 export default function Detail() {
   const userId = 1;
@@ -11,7 +12,7 @@ export default function Detail() {
   }
   return (
     <>
-      <div className=" h-full">
+      <div className=" h-full flex flex-col items-center">
         <div className="flex flex-col  items-center h-full gap-3 overflow-scroll">
           {stockInfo.allTickers.map((ticker) => {
             return (
@@ -26,6 +27,9 @@ export default function Detail() {
               </Link>
             );
           })}
+        </div>
+        <div>
+          <Button />
         </div>
 
         {/* <Exchange /> */}
