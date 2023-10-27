@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App.tsx';
 import Detail from './pages/Detail.tsx';
 import TradingDetail from './pages/TradingDetail.tsx';
+import Edit from './pages/Edit.tsx';
 import './index.css';
 import './font.css';
 
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: '/detail/:userId/:ticker',
     element: <TradingDetail />,
+  },
+  {
+    path: `/detail/:userId/edit`,
+    element: <Edit />,
   },
 ]);
 
