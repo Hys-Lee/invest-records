@@ -33,6 +33,8 @@ export default function TradingDetail() {
               <div>{x.buyAndSell === 'b' ? 'buy' : 'sell'}</div>
               <div className="font-bold">Exchange Rate of the Day</div>
               <div>{x.exchangeRate}</div>
+              <div className="font-bold">Trading Price</div>
+              <div>{x.price}</div>
               <div className="font-bold">Trading Amount</div>
               <div>{x.quantity}</div>
             </div>
