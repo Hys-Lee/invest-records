@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import user from '../user.json';
 import Stock from '../api/Stock';
 
@@ -18,6 +18,9 @@ export default function TradingDetail() {
 
   return (
     <div className="m-2  ">
+      <Link to={`/detail/`} className=" text-center">
+        <span className="  text-2xl font-extrabold">&lt;</span>
+      </Link>
       <h2 className=" text-center text-3xl font-bold">{ticker}</h2>
       <p className="pb-2 text-neutral-500">Trading History</p>
       <div className="grid gap-4 justify-center text-left overflow-scroll h-60">
