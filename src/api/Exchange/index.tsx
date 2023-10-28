@@ -59,14 +59,18 @@ const Exchange = () => {
   }, [targetExchange]);
 
   return (
-    <div className="text-center">
-      <div className="pb-2">
+    <div className="flex flex-col p-2 w-48 rounded-2xl shadow-sm items-center bg-white text-center">
+      <div className="pb-2 font-semibold">
         {targetExchange.result === 1 ? targetExchange.deal_bas_r : 'No data for today'}
       </div>
       <div>
-        <p>The most recent exchange rate is </p>
-        {targetExchange.result != 1 && recentExchageDate.length != 0 && recentExchageDate[0].rate}
-        <p>
+        <p className="text-sm">
+          The most recent <br /> exchange rate is{' '}
+        </p>
+        <span className="font-semibold">
+          {targetExchange.result != 1 && recentExchageDate.length != 0 && recentExchageDate[0].rate}
+        </span>
+        <p className="text-sm">
           {' '}
           from{' '}
           {targetExchange.result != 1 && recentExchageDate.length != 0 && recentExchageDate[0].date}
