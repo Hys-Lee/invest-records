@@ -3,6 +3,22 @@ import { getDocs, addDoc, getFirestore, doc } from 'firebase/firestore/lite';
 import { db } from '../../firebase.tsx';
 
 const orderRef = collection(db, 'orders');
+const exchangeRateRef = collection(db, 'exchangeRates');
+
+async function getExchangeRate() {
+  const queryConstraints = [];
+  queryConstraints.push(orderBy('date', 'desc'));
+  queryConstraints.push(limit(1));
+
+  const q = query(exchangeRateRef, ...queryConstraints);
+  const querySnapshot = await getDocs(q);
+  const data = querySnapshot.docs.map((doc) => ({
+    ...doc.data(),
+    id: doc.id,
+  }));
+
+  return data;
+}
 
 async function insertOrder(data: object) {
   await addDoc(orderRef, data)
@@ -25,4 +41,4 @@ async function getOrder(filter: object) {
 
   return data;
 }
-export { insertOrder, getOrder };
+export { getExchangeRate, insertOrder, getOrder };
